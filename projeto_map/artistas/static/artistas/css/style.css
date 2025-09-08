@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Corpo da página */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: black; /* fundo preto */
+   background: url("../img/fundo_site.png"); /* sua imagem de fundo */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /* mantém a imagem fixa ao rolar */
+  margin: 0;
+  height: 100vh;
+}
+
+/* Overlay semi-transparente */
+.overlay {
+  position: fixed; /* garante que cubra toda a tela mesmo ao rolar */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6); /* escurece a imagem */
+  z-index: 0;
+}
+
+/* Card centralizado */
+.card {
+  position: relative; /* para ficar acima da overlay */
+  z-index: 1;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Logo */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #181bcd;
+}
+
+/* Botão personalizado */
+.btn-custom {
+  background-color: #181bcd;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #0f13a0;
+  color: white;
+}
+
+/* Botões de redes sociais */
+.btn-outline-dark,
+.btn-outline-primary {
+  font-weight: bold;
+}
