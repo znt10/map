@@ -1,3 +1,5 @@
+{% load socialaccount %}
+
 {%load static%}
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -38,7 +40,9 @@
       <div class="text-center mt-3">
         <small>Ou entre com:</small>
         <div class="d-grid gap-2 mt-2">
-          <button class="btn btn-outline-dark"><i class="bi bi-google"></i> Google</button>
+          <a href="{% provider_login_url 'google' %}?next=/home/" class="btn btn-outline-dark">
+              <i class="bi bi-google"></i> Google
+          </a>
           <button class="btn btn-outline-primary"><i class="bi bi-microsoft"></i> Microsoft</button>
         </div>
       </div>

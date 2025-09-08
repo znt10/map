@@ -20,10 +20,10 @@ class LoginView(View):
         Perfil.objects.create(email=email, senha=senha)
 
 
-        return redirect('sim')
+        return redirect('home')
 
 
-class sim(View):
+class Home(View):
     def get(self,request):
-        return render(request, 'sim.html')
+        return render(request, 'home.html')
 
